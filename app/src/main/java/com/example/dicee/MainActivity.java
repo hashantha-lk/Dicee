@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button rollButton;
-        rollButton = (Button) findViewById(R.id.rollButton);
+        rollButton = (Button) findViewById(R.id.rollButton); //Button object.
 
-        final ImageView leftDice = (ImageView) findViewById(R.id.image_leftDice);
-        final ImageView rightDice = (ImageView) findViewById(R.id.image_rightDice);
+        final ImageView leftDice = (ImageView) findViewById(R.id.image_leftDice); //Left dice image object.
+        final ImageView rightDice = (ImageView) findViewById(R.id.image_rightDice); //Right dice image object.
 
         //Dice array.
         final int[] diceArray = {
