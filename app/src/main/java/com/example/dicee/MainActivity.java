@@ -22,6 +22,16 @@ public class MainActivity extends AppCompatActivity {
         ImageView leftDice = (ImageView) findViewById(R.id.image_leftDice);
         ImageView rightDice = (ImageView) findViewById(R.id.image_rightDice);
 
+        //Dice array
+        int[] diceArray = {R.drawable.dice1,
+                R.drawable.dice2,
+                R.drawable.dice3,
+                R.drawable.dice4,
+                R.drawable.dice5,
+                R.drawable.dice6
+        };
+
+        //Roll Button
         rollButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
