@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         final ImageView leftDice = (ImageView) findViewById(R.id.image_leftDice);
         final ImageView rightDice = (ImageView) findViewById(R.id.image_rightDice);
 
-        //Dice array
+        //Dice array.
         final int[] diceArray = {
                 R.drawable.dice1,
                 R.drawable.dice2,
@@ -32,18 +32,22 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.dice6
         };
 
-        //Roll Button operation by OnClick listner
+        //Roll Button operation by OnClick listner.
         rollButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("Dicee", "Hello Player !");
+                Log.d("Dicee", "Hello Player !"); //For Logcat pane
 
-                Random randomNumberGenerator = new Random();
+                Random randomNumberGenerator = new Random(); //Random number method object created.
                 int number = randomNumberGenerator.nextInt(6);
 
-                Log.d("Dicee", "The random number is:  " + number);
+                Log.d("Dicee", "The random number is:  " + number); //For Logcat pane
 
                 leftDice.setImageResource(diceArray[number]);
+
+                number = randomNumberGenerator.nextInt(6);
+
+                rightDice.setImageResource(diceArray[number]);
             }
         });
     }
