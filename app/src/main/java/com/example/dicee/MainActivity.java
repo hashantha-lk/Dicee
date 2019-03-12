@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.dice6
         };
 
-        //Roll Button operation by OnClick listner.
+        //Roll Button operations by OnClick listner.
         rollButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
