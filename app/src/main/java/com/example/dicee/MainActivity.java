@@ -36,16 +36,16 @@ public class MainActivity extends AppCompatActivity {
         rollButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("Dicee", "Hello Player !"); //For Logcat pane
 
                 Random randomNumberGenerator = new Random(); //Random number method object created.
-                int number = randomNumberGenerator.nextInt(6);
 
-                Log.d("Dicee", "The random number is:  " + number); //For Logcat pane
+                int number = randomNumberGenerator.nextInt(6);
+                Log.d("Dicee", "The number of the left dice is:  " + number); //For Logcat message.
 
                 leftDice.setImageResource(diceArray[number]);
 
                 number = randomNumberGenerator.nextInt(6);
+                Log.d("Dicee", "The number of the left dice is:  " + number); //For Logcat message.
 
                 rightDice.setImageResource(diceArray[number]);
             }
